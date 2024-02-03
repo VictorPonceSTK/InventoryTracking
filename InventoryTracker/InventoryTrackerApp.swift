@@ -10,6 +10,10 @@ import SwiftData
 
 @main
 struct InventoryTrackerApp: App {
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
+    
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -22,10 +26,12 @@ struct InventoryTrackerApp: App {
             fatalError("Could not create ModelContainer: \(error)")
         }
     }()
-
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack{
+                InvenotryListView()
+            }
         }
         .modelContainer(sharedModelContainer)
     }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62181E3D2B6DC9B400974876 /* InventoryFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62181E3C2B6DC9B400974876 /* InventoryFormView.swift */; };
+		62181E402B6DCA6800974876 /* InventoryFormVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62181E3F2B6DCA6800974876 /* InventoryFormVM.swift */; };
 		62A953F62B6DB8510015DD65 /* InventoryTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A953F52B6DB8510015DD65 /* InventoryTrackerApp.swift */; };
 		62A953F82B6DB8510015DD65 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A953F72B6DB8510015DD65 /* ContentView.swift */; };
 		62A953FA2B6DB8510015DD65 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A953F92B6DB8510015DD65 /* Item.swift */; };
@@ -15,6 +17,29 @@
 		62A954092B6DB8520015DD65 /* InventoryTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A954082B6DB8520015DD65 /* InventoryTrackerTests.swift */; };
 		62A954132B6DB8520015DD65 /* InventoryTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A954122B6DB8520015DD65 /* InventoryTrackerUITests.swift */; };
 		62A954152B6DB8520015DD65 /* InventoryTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A954142B6DB8520015DD65 /* InventoryTrackerUITestsLaunchTests.swift */; };
+		62A9542A2B6DB8810015DD65 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 62A954292B6DB8810015DD65 /* RealityKitContent */; };
+		62A9542C2B6DB8810015DD65 /* InventoryTrackerVisionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A9542B2B6DB8810015DD65 /* InventoryTrackerVisionApp.swift */; };
+		62A9542E2B6DB8810015DD65 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A9542D2B6DB8810015DD65 /* ContentView.swift */; };
+		62A954302B6DB8820015DD65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62A9542F2B6DB8820015DD65 /* Assets.xcassets */; };
+		62A954332B6DB8820015DD65 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62A954322B6DB8820015DD65 /* Preview Assets.xcassets */; };
+		62A9543E2B6DB8820015DD65 /* InventoryTrackerVisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A9543D2B6DB8820015DD65 /* InventoryTrackerVisionTests.swift */; };
+		62A954482B6DB9AF0015DD65 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 62A954472B6DB9AF0015DD65 /* FirebaseFirestore */; };
+		62A9544A2B6DB9D20015DD65 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 62A954492B6DB9D20015DD65 /* FirebaseStorage */; };
+		62A9544C2B6DB9D80015DD65 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 62A9544B2B6DB9D80015DD65 /* FirebaseFirestoreSwift */; };
+		62A9544E2B6DB9F00015DD65 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 62A9544D2B6DB9F00015DD65 /* FirebaseFirestore */; };
+		62A954502B6DB9F50015DD65 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 62A9544F2B6DB9F50015DD65 /* FirebaseFirestoreSwift */; };
+		62A954522B6DBA030015DD65 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 62A954512B6DBA030015DD65 /* FirebaseStorage */; };
+		62A9545B2B6DBB9C0015DD65 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62A9545A2B6DBB9C0015DD65 /* GoogleService-Info.plist */; };
+		62A9545D2B6DBBBB0015DD65 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62A9545C2B6DBBBB0015DD65 /* GoogleService-Info.plist */; };
+		62A954632B6DBFCB0015DD65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A954622B6DBFCB0015DD65 /* AppDelegate.swift */; };
+		62A954642B6DBFCB0015DD65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A954622B6DBFCB0015DD65 /* AppDelegate.swift */; };
+		62A954672B6DC1C00015DD65 /* InventoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A954662B6DC1C00015DD65 /* InventoryItem.swift */; };
+		62A954682B6DC1C00015DD65 /* InventoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A954662B6DC1C00015DD65 /* InventoryItem.swift */; };
+		62A9546B2B6DC2E20015DD65 /* InvenotryListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A9546A2B6DC2E20015DD65 /* InvenotryListVM.swift */; };
+		62A9546C2B6DC2E20015DD65 /* InvenotryListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A9546A2B6DC2E20015DD65 /* InvenotryListVM.swift */; };
+		62A9546F2B6DC6260015DD65 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A9546E2B6DC6260015DD65 /* String+Extension.swift */; };
+		62A954702B6DC6260015DD65 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A9546E2B6DC6260015DD65 /* String+Extension.swift */; };
+		62A954732B6DC65A0015DD65 /* InvenotryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A954722B6DC65A0015DD65 /* InvenotryListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,9 +57,18 @@
 			remoteGlobalIDString = 62A953F12B6DB8510015DD65;
 			remoteInfo = InventoryTracker;
 		};
+		62A9543A2B6DB8820015DD65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62A953EA2B6DB8510015DD65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62A954242B6DB8810015DD65;
+			remoteInfo = InventoryTrackerVision;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		62181E3C2B6DC9B400974876 /* InventoryFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryFormView.swift; sourceTree = "<group>"; };
+		62181E3F2B6DCA6800974876 /* InventoryFormVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryFormVM.swift; sourceTree = "<group>"; };
 		62A953F22B6DB8510015DD65 /* InventoryTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InventoryTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62A953F52B6DB8510015DD65 /* InventoryTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryTrackerApp.swift; sourceTree = "<group>"; };
 		62A953F72B6DB8510015DD65 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +80,23 @@
 		62A9540E2B6DB8520015DD65 /* InventoryTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InventoryTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62A954122B6DB8520015DD65 /* InventoryTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryTrackerUITests.swift; sourceTree = "<group>"; };
 		62A954142B6DB8520015DD65 /* InventoryTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		62A954252B6DB8810015DD65 /* InventoryTrackerVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InventoryTrackerVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62A954282B6DB8810015DD65 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		62A9542B2B6DB8810015DD65 /* InventoryTrackerVisionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryTrackerVisionApp.swift; sourceTree = "<group>"; };
+		62A9542D2B6DB8810015DD65 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		62A9542F2B6DB8820015DD65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62A954322B6DB8820015DD65 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		62A954342B6DB8820015DD65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62A954392B6DB8820015DD65 /* InventoryTrackerVisionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InventoryTrackerVisionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		62A9543D2B6DB8820015DD65 /* InventoryTrackerVisionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryTrackerVisionTests.swift; sourceTree = "<group>"; };
+		62A9545A2B6DBB9C0015DD65 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		62A9545C2B6DBBBB0015DD65 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		62A9545E2B6DBF3E0015DD65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		62A954622B6DBFCB0015DD65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		62A954662B6DC1C00015DD65 /* InventoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryItem.swift; sourceTree = "<group>"; };
+		62A9546A2B6DC2E20015DD65 /* InvenotryListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvenotryListVM.swift; sourceTree = "<group>"; };
+		62A9546E2B6DC6260015DD65 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		62A954722B6DC65A0015DD65 /* InvenotryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvenotryListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +104,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62A954482B6DB9AF0015DD65 /* FirebaseFirestore in Frameworks */,
+				62A9544A2B6DB9D20015DD65 /* FirebaseStorage in Frameworks */,
+				62A9544C2B6DB9D80015DD65 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,16 +124,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		62A954222B6DB8810015DD65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62A9542A2B6DB8810015DD65 /* RealityKitContent in Frameworks */,
+				62A954522B6DBA030015DD65 /* FirebaseStorage in Frameworks */,
+				62A9544E2B6DB9F00015DD65 /* FirebaseFirestore in Frameworks */,
+				62A954502B6DB9F50015DD65 /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62A954362B6DB8820015DD65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62181E3E2B6DCA5500974876 /* Observables */ = {
+			isa = PBXGroup;
+			children = (
+				62181E3F2B6DCA6800974876 /* InventoryFormVM.swift */,
+			);
+			path = Observables;
+			sourceTree = "<group>";
+		};
 		62A953E92B6DB8510015DD65 = {
 			isa = PBXGroup;
 			children = (
+				62A9545F2B6DBFA80015DD65 /* Shared */,
 				62A953F42B6DB8510015DD65 /* InventoryTracker */,
+				62A954262B6DB8810015DD65 /* InventoryTrackerVision */,
 				62A954072B6DB8520015DD65 /* InventoryTrackerTests */,
 				62A954112B6DB8520015DD65 /* InventoryTrackerUITests */,
+				62A954272B6DB8810015DD65 /* Packages */,
+				62A9543C2B6DB8820015DD65 /* InventoryTrackerVisionTests */,
 				62A953F32B6DB8510015DD65 /* Products */,
+				62A954462B6DB9AF0015DD65 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +174,8 @@
 				62A953F22B6DB8510015DD65 /* InventoryTracker.app */,
 				62A954042B6DB8520015DD65 /* InventoryTrackerTests.xctest */,
 				62A9540E2B6DB8520015DD65 /* InventoryTrackerUITests.xctest */,
+				62A954252B6DB8810015DD65 /* InventoryTrackerVision.app */,
+				62A954392B6DB8820015DD65 /* InventoryTrackerVisionTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +183,10 @@
 		62A953F42B6DB8510015DD65 /* InventoryTracker */ = {
 			isa = PBXGroup;
 			children = (
+				62181E3E2B6DCA5500974876 /* Observables */,
+				62A954712B6DC6510015DD65 /* Views */,
+				62A9545E2B6DBF3E0015DD65 /* Info.plist */,
+				62A9545A2B6DBB9C0015DD65 /* GoogleService-Info.plist */,
 				62A953F52B6DB8510015DD65 /* InventoryTrackerApp.swift */,
 				62A953F72B6DB8510015DD65 /* ContentView.swift */,
 				62A953F92B6DB8510015DD65 /* Item.swift */,
@@ -130,6 +221,94 @@
 			path = InventoryTrackerUITests;
 			sourceTree = "<group>";
 		};
+		62A954262B6DB8810015DD65 /* InventoryTrackerVision */ = {
+			isa = PBXGroup;
+			children = (
+				62A9545C2B6DBBBB0015DD65 /* GoogleService-Info.plist */,
+				62A9542B2B6DB8810015DD65 /* InventoryTrackerVisionApp.swift */,
+				62A9542D2B6DB8810015DD65 /* ContentView.swift */,
+				62A9542F2B6DB8820015DD65 /* Assets.xcassets */,
+				62A954342B6DB8820015DD65 /* Info.plist */,
+				62A954312B6DB8820015DD65 /* Preview Content */,
+			);
+			path = InventoryTrackerVision;
+			sourceTree = "<group>";
+		};
+		62A954272B6DB8810015DD65 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				62A954282B6DB8810015DD65 /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		62A954312B6DB8820015DD65 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				62A954322B6DB8820015DD65 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		62A9543C2B6DB8820015DD65 /* InventoryTrackerVisionTests */ = {
+			isa = PBXGroup;
+			children = (
+				62A9543D2B6DB8820015DD65 /* InventoryTrackerVisionTests.swift */,
+			);
+			path = InventoryTrackerVisionTests;
+			sourceTree = "<group>";
+		};
+		62A954462B6DB9AF0015DD65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62A9545F2B6DBFA80015DD65 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				62A9546D2B6DC6170015DD65 /* New Group */,
+				62A954692B6DC2CF0015DD65 /* Observables */,
+				62A954652B6DC1AB0015DD65 /* Models */,
+				62A954622B6DBFCB0015DD65 /* AppDelegate.swift */,
+				62A9546E2B6DC6260015DD65 /* String+Extension.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		62A954652B6DC1AB0015DD65 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				62A954662B6DC1C00015DD65 /* InventoryItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		62A954692B6DC2CF0015DD65 /* Observables */ = {
+			isa = PBXGroup;
+			children = (
+				62A9546A2B6DC2E20015DD65 /* InvenotryListVM.swift */,
+			);
+			path = Observables;
+			sourceTree = "<group>";
+		};
+		62A9546D2B6DC6170015DD65 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		62A954712B6DC6510015DD65 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				62A954722B6DC65A0015DD65 /* InvenotryListView.swift */,
+				62181E3C2B6DC9B400974876 /* InventoryFormView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +325,11 @@
 			dependencies = (
 			);
 			name = InventoryTracker;
+			packageProductDependencies = (
+				62A954472B6DB9AF0015DD65 /* FirebaseFirestore */,
+				62A954492B6DB9D20015DD65 /* FirebaseStorage */,
+				62A9544B2B6DB9D80015DD65 /* FirebaseFirestoreSwift */,
+			);
 			productName = InventoryTracker;
 			productReference = 62A953F22B6DB8510015DD65 /* InventoryTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -186,6 +370,47 @@
 			productReference = 62A9540E2B6DB8520015DD65 /* InventoryTrackerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		62A954242B6DB8810015DD65 /* InventoryTrackerVision */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62A9543F2B6DB8820015DD65 /* Build configuration list for PBXNativeTarget "InventoryTrackerVision" */;
+			buildPhases = (
+				62A954212B6DB8810015DD65 /* Sources */,
+				62A954222B6DB8810015DD65 /* Frameworks */,
+				62A954232B6DB8810015DD65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InventoryTrackerVision;
+			packageProductDependencies = (
+				62A954292B6DB8810015DD65 /* RealityKitContent */,
+				62A9544D2B6DB9F00015DD65 /* FirebaseFirestore */,
+				62A9544F2B6DB9F50015DD65 /* FirebaseFirestoreSwift */,
+				62A954512B6DBA030015DD65 /* FirebaseStorage */,
+			);
+			productName = InventoryTrackerVision;
+			productReference = 62A954252B6DB8810015DD65 /* InventoryTrackerVision.app */;
+			productType = "com.apple.product-type.application";
+		};
+		62A954382B6DB8820015DD65 /* InventoryTrackerVisionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62A954422B6DB8820015DD65 /* Build configuration list for PBXNativeTarget "InventoryTrackerVisionTests" */;
+			buildPhases = (
+				62A954352B6DB8820015DD65 /* Sources */,
+				62A954362B6DB8820015DD65 /* Frameworks */,
+				62A954372B6DB8820015DD65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62A9543B2B6DB8820015DD65 /* PBXTargetDependency */,
+			);
+			name = InventoryTrackerVisionTests;
+			productName = InventoryTrackerVisionTests;
+			productReference = 62A954392B6DB8820015DD65 /* InventoryTrackerVisionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,6 +432,13 @@
 						CreatedOnToolsVersion = 15.2;
 						TestTargetID = 62A953F12B6DB8510015DD65;
 					};
+					62A954242B6DB8810015DD65 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					62A954382B6DB8820015DD65 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 62A954242B6DB8810015DD65;
+					};
 				};
 			};
 			buildConfigurationList = 62A953ED2B6DB8510015DD65 /* Build configuration list for PBXProject "InventoryTracker" */;
@@ -218,13 +450,18 @@
 				Base,
 			);
 			mainGroup = 62A953E92B6DB8510015DD65;
+			packageReferences = (
+				62A954452B6DB98C0015DD65 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 62A953F32B6DB8510015DD65 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				62A953F12B6DB8510015DD65 /* InventoryTracker */,
+				62A954242B6DB8810015DD65 /* InventoryTrackerVision */,
 				62A954032B6DB8520015DD65 /* InventoryTrackerTests */,
 				62A9540D2B6DB8520015DD65 /* InventoryTrackerUITests */,
+				62A954382B6DB8820015DD65 /* InventoryTrackerVisionTests */,
 			);
 		};
 /* End PBXProject section */
@@ -236,6 +473,7 @@
 			files = (
 				62A953FF2B6DB8520015DD65 /* Preview Assets.xcassets in Resources */,
 				62A953FC2B6DB8520015DD65 /* Assets.xcassets in Resources */,
+				62A9545B2B6DBB9C0015DD65 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +491,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		62A954232B6DB8810015DD65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62A954332B6DB8820015DD65 /* Preview Assets.xcassets in Resources */,
+				62A954302B6DB8820015DD65 /* Assets.xcassets in Resources */,
+				62A9545D2B6DBBBB0015DD65 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62A954372B6DB8820015DD65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -260,7 +515,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62A954672B6DC1C00015DD65 /* InventoryItem.swift in Sources */,
+				62181E402B6DCA6800974876 /* InventoryFormVM.swift in Sources */,
+				62A9546F2B6DC6260015DD65 /* String+Extension.swift in Sources */,
+				62A954732B6DC65A0015DD65 /* InvenotryListView.swift in Sources */,
+				62A954632B6DBFCB0015DD65 /* AppDelegate.swift in Sources */,
 				62A953F82B6DB8510015DD65 /* ContentView.swift in Sources */,
+				62A9546B2B6DC2E20015DD65 /* InvenotryListVM.swift in Sources */,
+				62181E3D2B6DC9B400974876 /* InventoryFormView.swift in Sources */,
 				62A953FA2B6DB8510015DD65 /* Item.swift in Sources */,
 				62A953F62B6DB8510015DD65 /* InventoryTrackerApp.swift in Sources */,
 			);
@@ -283,6 +545,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		62A954212B6DB8810015DD65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62A954642B6DBFCB0015DD65 /* AppDelegate.swift in Sources */,
+				62A9542E2B6DB8810015DD65 /* ContentView.swift in Sources */,
+				62A9542C2B6DB8810015DD65 /* InventoryTrackerVisionApp.swift in Sources */,
+				62A954682B6DC1C00015DD65 /* InventoryItem.swift in Sources */,
+				62A954702B6DC6260015DD65 /* String+Extension.swift in Sources */,
+				62A9546C2B6DC2E20015DD65 /* InvenotryListVM.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62A954352B6DB8820015DD65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62A9543E2B6DB8820015DD65 /* InventoryTrackerVisionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -295,6 +578,11 @@
 			isa = PBXTargetDependency;
 			target = 62A953F12B6DB8510015DD65 /* InventoryTracker */;
 			targetProxy = 62A9540F2B6DB8520015DD65 /* PBXContainerItemProxy */;
+		};
+		62A9543B2B6DB8820015DD65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62A954242B6DB8810015DD65 /* InventoryTrackerVision */;
+			targetProxy = 62A9543A2B6DB8820015DD65 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -351,7 +639,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -408,7 +696,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -426,8 +714,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"InventoryTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = 6TVT65N354;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InventoryTracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,8 +744,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"InventoryTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = 6TVT65N354;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InventoryTracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -546,6 +838,104 @@
 			};
 			name = Release;
 		};
+		62A954402B6DB8820015DD65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"InventoryTrackerVision/Preview Content\"";
+				DEVELOPMENT_TEAM = 6TVT65N354;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.softtek.InventoryTrackerVision;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = xros;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Debug;
+		};
+		62A954412B6DB8820015DD65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"InventoryTrackerVision/Preview Content\"";
+				DEVELOPMENT_TEAM = 6TVT65N354;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.softtek.InventoryTrackerVision;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = xros;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Release;
+		};
+		62A954432B6DB8820015DD65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.softtek.InventoryTrackerVisionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = xros;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InventoryTrackerVision.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InventoryTrackerVision";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Debug;
+		};
+		62A954442B6DB8820015DD65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.softtek.InventoryTrackerVisionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = xros;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InventoryTrackerVision.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InventoryTrackerVision";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -585,7 +975,73 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		62A9543F2B6DB8820015DD65 /* Build configuration list for PBXNativeTarget "InventoryTrackerVision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62A954402B6DB8820015DD65 /* Debug */,
+				62A954412B6DB8820015DD65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62A954422B6DB8820015DD65 /* Build configuration list for PBXNativeTarget "InventoryTrackerVisionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62A954432B6DB8820015DD65 /* Debug */,
+				62A954442B6DB8820015DD65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		62A954452B6DB98C0015DD65 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.20.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		62A954292B6DB8810015DD65 /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+		62A954472B6DB9AF0015DD65 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62A954452B6DB98C0015DD65 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		62A954492B6DB9D20015DD65 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62A954452B6DB98C0015DD65 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		62A9544B2B6DB9D80015DD65 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62A954452B6DB98C0015DD65 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		62A9544D2B6DB9F00015DD65 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62A954452B6DB98C0015DD65 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		62A9544F2B6DB9F50015DD65 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62A954452B6DB98C0015DD65 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		62A954512B6DBA030015DD65 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62A954452B6DB98C0015DD65 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 62A953EA2B6DB8510015DD65 /* Project object */;
 }
