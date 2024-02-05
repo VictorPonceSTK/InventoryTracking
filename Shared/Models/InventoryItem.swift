@@ -19,7 +19,7 @@ struct InventoryItem: Identifiable, Codable, Equatable {
     var quantity: Int
     
     var usdzLink: String?
-    var udszURL: URL? {
+    var usdzURL: URL? {
         guard let usdzLink else { return nil }
         return URL(string: usdzLink)
     }

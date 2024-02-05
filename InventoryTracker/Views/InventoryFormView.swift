@@ -17,6 +17,28 @@ struct InventoryFormView: View {
             List{
                 inputSection
                 arSection
+                if case .deleting(let type) = vm.loadingState{
+                    HStack{
+                        Spacer()
+                        VStack(spacing:8){
+                            ProgressView()
+                            Text("Deleting \(type == .usdzWithThumbnail ? "USDZ file" : "Item")")
+                        }
+                        Spacer()
+                    }
+                }
+                if case .edit = vm.formType{
+                    Button("Delete", role: .destructive){
+                        Task {
+                            do{
+                                try await vm.deleteItem()
+                                dismiss()
+                            }catch{
+                                vm.error = error.localizedDescription
+                            }
+                        }
+                    }
+                }
             }
         }
         .toolbar{
@@ -88,13 +110,11 @@ struct InventoryFormView: View {
                                 guard let usdzURL = vm.usdzURL else { return }
                                 viewAR(url: usdzURL)
                             }
+                    case .failure:
+                        Text("Failed to fetch thumbnail")
                     default: ProgressView()
                     }
                 }
-                    
-            }
-            else{
-                Text("Failed to fetch thumbnail")
             }
             
             if let usdzURL = vm.usdzURL{
@@ -107,11 +127,11 @@ struct InventoryFormView: View {
                     }
                 }
                 Button("Delete USDZ",role: .destructive){
-//                        TODO:
+                    Task { await vm.deleteUSDZ() }
                 }
             }else{
                 Button{
-                    vm.showUSDZSource = true 
+                    vm.showUSDZSource = true
                 }label: {
                     HStack {
                         Image(systemName: "arkit").imageScale(.large)
@@ -119,8 +139,19 @@ struct InventoryFormView: View {
                     }
                 }
             }
+            if let progress = vm.uploadProgress,
+               case let .uploading(type) = vm.loadingState, progress.totalUnitCount > 0 {
+                VStack{
+                    ProgressView(value:progress.fractionCompleted){
+                        Text("Uploading \(type == .usdz ? "USDZ" : "Thubmnail") file \(Int(progress.fractionCompleted * 100))%")
+                    }
+                    Text("\(vm.byteConutFormatter.string(fromByteCount: progress.completedUnitCount)) / \(vm.byteConutFormatter.string(fromByteCount: progress.totalUnitCount))")
+                }
+            }
         }
+        .disabled(vm.loadingState != .none)
     }
+    
     func viewAR(url:URL){
         let safariVC = SFSafariViewController(url: url)
         let vd = UIApplication.shared.firstKeyWindow?.rootViewController?.presentedViewController ?? UIApplication.shared.firstKeyWindow?.rootViewController

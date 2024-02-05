@@ -90,6 +90,36 @@ class InventoryFormViewModel: ObservableObject{
     }
     
     @MainActor
+    func deleteUSDZ() async{
+        let storageRef = Storage.storage().reference()
+        let usddzRef = storageRef.child("\(id).usdz")
+        let thubnailRef = storageRef.child("\(id).jpg")
+        loadingState = .deleting(.usdzWithThumbnail)
+        defer { loadingState = .none}
+        
+        do {
+            try await usddzRef.delete()
+            try? await thubnailRef.delete()
+            self.usdzURL = nil
+            self.thumbnailURL = nil
+        } catch{
+            self.error = error.localizedDescription
+        }
+    }
+    @MainActor
+    func deleteItem() async throws{
+        loadingState = .deleting(.item)
+        do{
+            try await db.document("items/\(id)").delete()
+            try? await Storage.storage().reference().child("\(id).usdz").delete()
+            try? await Storage.storage().reference().child("\(id).jpg").delete()
+        }catch{
+            loadingState = .none
+            throw error
+        }
+    }
+    
+    @MainActor
     func uploadUSDZ(fileURL: URL) async{
         let gotAcess = fileURL.startAccessingSecurityScopedResource() //TODO: Search more about this
         guard gotAcess, let data = try? Data(contentsOf: fileURL) else {return}
@@ -157,6 +187,7 @@ enum LoadingType: Equatable{
     case none
     case savingItem
     case uploading(UploadType)
+    case deleting(DeleteType)
 }
 
 enum USDZSourceType {
@@ -166,6 +197,11 @@ enum USDZSourceType {
 enum UploadType: Equatable{
     case usdz,thumnail
 }
+
+enum DeleteType {
+    case usdzWithThumbnail, item
+}
+
 
 struct UploadProgress{
     var fractionCompleted: Double
