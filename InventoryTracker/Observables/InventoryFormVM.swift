@@ -53,7 +53,7 @@ class InventoryFormViewModel: ObservableObject{
             id = item.id
             name = item.name
             quantity = item.quantity
-            if let usdzURL = item.udszURL{
+            if let usdzURL = item.usdzURL{
                 self.usdzURL = usdzURL
             }
             if let thumnailURL = item.thumnailURL{
@@ -120,9 +120,14 @@ class InventoryFormViewModel: ObservableObject{
     }
     
     @MainActor
-    func uploadUSDZ(fileURL: URL) async{
-        let gotAcess = fileURL.startAccessingSecurityScopedResource() //TODO: Search more about this
-        guard gotAcess, let data = try? Data(contentsOf: fileURL) else {return}
+    func uploadUSDZ(fileURL: URL, isSecurityScopeResource: Bool = false) async{
+        if isSecurityScopeResource, !fileURL.startAccessingSecurityScopedResource(){
+            return
+        }
+        guard let data = try? Data(contentsOf: fileURL) else {return}
+        if isSecurityScopeResource {
+            fileURL.stopAccessingSecurityScopedResource()
+        }
         fileURL.stopAccessingSecurityScopedResource()
         uploadProgress = .init(UploadProgress(fractionCompleted: 0, totalUnitCount: 0, completedUnitCount: 0))
         loadingState = .uploading(.usdz)

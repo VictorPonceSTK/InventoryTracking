@@ -8,14 +8,19 @@
 import SwiftUI
 import RealityKit
 struct InventoryListView: View {
+    
     @StateObject var vm = InvenotryListViewModel()
     private let gridItem: [GridItem] = [.init(.adaptive(minimum: 240),spacing: 16)]
+    
     var body: some View {
         ScrollView{
             LazyVGrid(columns: gridItem, content: {
                 ForEach(vm.items){item in
                     InvenotryListItemView(item: item)
-                        .onDrag{ NSItemProvider()}
+                        .onDrag{
+                            guard let usdzURL = item.usdzURL else { return NSItemProvider() }
+                            return NSItemProvider(object: USDZItemProvider(usdzURL: usdzURL))
+                        }
                 }
             })
             .padding(.vertical)
@@ -27,9 +32,12 @@ struct InventoryListView: View {
 }
 
 struct InvenotryListItemView: View {
+    
     let item : InventoryItem
+    
     @EnvironmentObject var navVM: NavigationViewModel
     @Environment(\.openWindow) var openWindow
+    
     var body: some View{
         Button{
             navVM.selectedItem = item
@@ -39,7 +47,9 @@ struct InvenotryListItemView: View {
                 ZStack{
                     if let usdzURL = item.usdzURL{
                         Model3D(url:usdzURL){ phase in
+                            
                             switch phase{
+                                
                             case .success(let model):
                                 model.resizable()
                                     .aspectRatio(contentMode: .fit)
@@ -53,10 +63,10 @@ struct InvenotryListItemView: View {
                             .foregroundStyle(Color.gray.opacity(0.3))
                         Text("Not available")
                     }
-                        
                 }
                 .frame(width:160, height:160)
                 .padding(.bottom,32)
+                
                 Text(item.name)
                 Text("Quantity: \(item.quantity)")
             }

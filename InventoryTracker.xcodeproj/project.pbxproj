@@ -17,6 +17,8 @@
 		624721CB2B6E0AF400E42968 /* InventoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624721CA2B6E0AF400E42968 /* InventoryItemView.swift */; };
 		624721CD2B6E0B1100E42968 /* InventoryItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624721CC2B6E0B1100E42968 /* InventoryItemVM.swift */; };
 		624721CF2B6E106B00E42968 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624721CE2B6E106B00E42968 /* URL+Extension.swift */; };
+		624721D12B71634F00E42968 /* USDZItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624721D02B71634F00E42968 /* USDZItemProvider.swift */; };
+		624721D42B719E0A00E42968 /* USDZScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 624721D32B719E0A00E42968 /* USDZScanner */; };
 		62A953F62B6DB8510015DD65 /* InventoryTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A953F52B6DB8510015DD65 /* InventoryTrackerApp.swift */; };
 		62A953F82B6DB8510015DD65 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A953F72B6DB8510015DD65 /* ContentView.swift */; };
 		62A953FA2B6DB8510015DD65 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A953F92B6DB8510015DD65 /* Item.swift */; };
@@ -78,6 +80,7 @@
 		624721CA2B6E0AF400E42968 /* InventoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryItemView.swift; sourceTree = "<group>"; };
 		624721CC2B6E0B1100E42968 /* InventoryItemVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryItemVM.swift; sourceTree = "<group>"; };
 		624721CE2B6E106B00E42968 /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
+		624721D02B71634F00E42968 /* USDZItemProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USDZItemProvider.swift; sourceTree = "<group>"; };
 		62A953F22B6DB8510015DD65 /* InventoryTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InventoryTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62A953F52B6DB8510015DD65 /* InventoryTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryTrackerApp.swift; sourceTree = "<group>"; };
 		62A953F72B6DB8510015DD65 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -115,6 +118,7 @@
 				62A954482B6DB9AF0015DD65 /* FirebaseFirestore in Frameworks */,
 				62A9544A2B6DB9D20015DD65 /* FirebaseStorage in Frameworks */,
 				62A9544C2B6DB9D80015DD65 /* FirebaseFirestoreSwift in Frameworks */,
+				624721D42B719E0A00E42968 /* USDZScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,11 +257,12 @@
 				624721C52B6E0A3500E42968 /* Observables */,
 				62181E412B6DF9CB00974876 /* Views */,
 				62A9545C2B6DBBBB0015DD65 /* GoogleService-Info.plist */,
-				62A9542B2B6DB8810015DD65 /* InventoryTrackerVisionApp.swift */,
 				62A9542F2B6DB8820015DD65 /* Assets.xcassets */,
 				62A954342B6DB8820015DD65 /* Info.plist */,
 				62A954312B6DB8820015DD65 /* Preview Content */,
 				624721CE2B6E106B00E42968 /* URL+Extension.swift */,
+				624721D02B71634F00E42968 /* USDZItemProvider.swift */,
+				62A9542B2B6DB8810015DD65 /* InventoryTrackerVisionApp.swift */,
 			);
 			path = InventoryTrackerVision;
 			sourceTree = "<group>";
@@ -357,6 +362,7 @@
 				62A954472B6DB9AF0015DD65 /* FirebaseFirestore */,
 				62A954492B6DB9D20015DD65 /* FirebaseStorage */,
 				62A9544B2B6DB9D80015DD65 /* FirebaseFirestoreSwift */,
+				624721D32B719E0A00E42968 /* USDZScanner */,
 			);
 			productName = InventoryTracker;
 			productReference = 62A953F22B6DB8510015DD65 /* InventoryTracker.app */;
@@ -480,6 +486,7 @@
 			mainGroup = 62A953E92B6DB8510015DD65;
 			packageReferences = (
 				62A954452B6DB98C0015DD65 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				624721D22B719E0A00E42968 /* XCRemoteSwiftPackageReference "USDZScanner" */,
 			);
 			productRefGroup = 62A953F32B6DB8510015DD65 /* Products */;
 			projectDirPath = "";
@@ -584,6 +591,7 @@
 				62A954682B6DC1C00015DD65 /* InventoryItem.swift in Sources */,
 				624721CD2B6E0B1100E42968 /* InventoryItemVM.swift in Sources */,
 				62A954702B6DC6260015DD65 /* String+Extension.swift in Sources */,
+				624721D12B71634F00E42968 /* USDZItemProvider.swift in Sources */,
 				62A9546C2B6DC2E20015DD65 /* InvenotryListVM.swift in Sources */,
 				62181E432B6DF9D800974876 /* InventoryListView.swift in Sources */,
 				624721C72B6E0A4700E42968 /* NavigationVM.swift in Sources */,
@@ -750,6 +758,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InventoryTracker/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to scan objects";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -780,6 +789,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InventoryTracker/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to scan objects";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1028,6 +1038,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		624721D22B719E0A00E42968 /* XCRemoteSwiftPackageReference "USDZScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/USDZScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
 		62A954452B6DB98C0015DD65 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -1053,6 +1071,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 62A954452B6DB98C0015DD65 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		624721D32B719E0A00E42968 /* USDZScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 624721D22B719E0A00E42968 /* XCRemoteSwiftPackageReference "USDZScanner" */;
+			productName = USDZScanner;
 		};
 		62A954292B6DB8810015DD65 /* RealityKitContent */ = {
 			isa = XCSwiftPackageProductDependency;
